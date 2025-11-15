@@ -1,12 +1,13 @@
 'use client';
 
+import { Suspense } from 'react';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { MentionsTable } from '@/components/mentions-table';
 import { LoadingSpinner } from '@/components/loading-spinner';
 import { fetchMentions, type Mention } from '@/lib/api';
 
-export default function MentionsPage() {
+function MentionsContent() {
   const [mentions, setMentions] = useState<Mention[]>([]);
   const [pagination, setPagination] = useState({ total: 0, limit: 20, offset: 0, pages: 0 });
   const [currentPage, setCurrentPage] = useState(0);
@@ -58,5 +59,13 @@ export default function MentionsPage() {
         />
       </div>
     </div>
+  );
+}
+
+export default function MentionsPage() {
+  return (
+    <Suspense fallback={<LoadingSpinner />}>
+      <MentionsContent />
+    </Suspense>
   );
 }
