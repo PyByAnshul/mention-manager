@@ -1,0 +1,63 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# Node modules and build artifacts
+node_modules
+.next
+build
+dist
+out
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Environment files
+.env*
+!.env.example
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs
+
+# Testing
+coverage
+.nyc_output
+.coverage
+htmlcov
+.pytest_cache
+
+# Cache directories
+.cache
+.npm
+.yarn
+
+# Temporary files
+*.tmp
+*.temp
+
+# Database files
+*.db
+*.sqlite*
+
+# Package files
+*.tgz
+*.tar.gz
