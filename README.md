@@ -180,10 +180,6 @@ Create `.env` file in backend directory:
 # Database
 DATABASE_URL=sqlite:///./mentions.db
 
-# Optional: External API keys (for enhanced data sources)
-# REDDIT_CLIENT_ID=your_reddit_client_id
-# REDDIT_CLIENT_SECRET=your_reddit_client_secret
-# TWITTER_BEARER_TOKEN=your_twitter_bearer_token
 ```
 
 ### Default Settings
@@ -201,6 +197,20 @@ DATABASE_URL=sqlite:///./mentions.db
 4. **Wait for data collection** (first results appear within minutes)
 5. **Monitor the dashboard** for real-time insights
 6. **Set up alerts** to get notified of important changes
+
+## 📸 Application Screenshots
+
+### Dashboard Overview
+![Dashboard](dashboard_page.png)
+Main dashboard showing real-time metrics, sentiment breakdown, trend charts, and recent alerts for comprehensive brand monitoring.
+
+### Keywords Management
+![Keywords Table](keyword_table_page.png)
+Keyword management interface where you can add, view, and delete tracking keywords across different platforms.
+
+### Mentions Analysis
+![Mentions Table](mention_table_page.png)
+Detailed mentions table with filtering, search, and pagination capabilities to analyze all brand mentions with sentiment scores.
 
 ## 🔍 Troubleshooting
 
