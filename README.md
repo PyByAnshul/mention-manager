@@ -205,7 +205,7 @@ DATABASE_URL=sqlite:///./mentions.db
 Main dashboard showing real-time metrics, sentiment breakdown, trend charts, and recent alerts for comprehensive brand monitoring.
 
 ### Keywords Management
-![Keywords Table](keyword_table_page.png)
+![Keywords Table](keyword_adding_page.png)
 Keyword management interface where you can add, view, and delete tracking keywords across different platforms.
 
 ### Mentions Analysis
